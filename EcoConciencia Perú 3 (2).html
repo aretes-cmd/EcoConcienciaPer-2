@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoConciencia Perú</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #d4f8e8, #f0fff4);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(45deg, #38b000, #008000);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-bottom: 5px solid #004d00;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+    nav a {
+      background-color: #ffb703;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #fb8500;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 225px;
+      height: 225px;
+      object-fit: cover;
+      margin: 35px;
+      border-radius: 20px;
+    }
+    .card-content {
+      padding: 15px;
+      flex: 1;
+    }
+    .card-content h2 { color: #007f5f; margin-top: 0; }
+
+    .card-content p,
+    .card-content li,
+    .card-content ol,
+    .card-content ul {
+      text-align: justify;
+      line-height: 1.5;
+      margin-bottom: 3 rem;
+    }
+    .btn {
+      background-color: #06d6a0;
+      color: white;
+      padding: 8px 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #118ab2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌎 EcoConciencia Perú</h1>
+    <p>Este proyecto fue diseñado para concientizar a las personas sobre los problemas ambientales en nuestro país y brindarles posibles soluciones para cuidar su entorno.</p>
+  </header>
+  <nav>
+    <a href="#problemas">🌱 Problemas</a>
+    <a href="#soluciones">✅ Soluciones</a>
+  </nav>
+
+  <section id="problemas">
+    <h1>🌱 Problemas Ambientales en el Perú</h1>
+
+    <!-- 1. Tala de árboles -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLy3zgkhQPsZU0AfzdiqlDMXID_xICSHPW_A&s" alt="Tala de árboles">
+      <div class="card-content">
+        <h2>🌳 Tala excesiva de árboles</h2>
+        <p>En el Perú, la tala excesiva de árboles es un problema grave, sobre todo en la Amazonía, donde cada año se pierden miles de hectáreas de bosque. Gran parte de esta deforestación se debe a la expansión agrícola, la ganadería y la tala ilegal para obtener madera. Esto provoca pérdida de biodiversidad, erosión del suelo y alteración del ciclo del agua. Además, contribuye al cambio climático por la liberación de grandes cantidades de CO₂ almacenado en los árboles.</p>
+        <a href="#tala" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 2. Contaminación de ríos -->
+    <div class="card">
+      <img src="https://cooperaccion.org.pe/wp-content/uploads/2024/04/fa8a7ecb-2a7e-40c5-b7a6-32c522c3c510.webp" alt="Contaminación de ríos">
+      <div class="card-content">
+        <h2>💧 Contaminación de ríos</h2>
+        <p>En el Perú, la contaminación de ríos afecta gravemente a ecosistemas y comunidades, especialmente en la Amazonía, la sierra y zonas urbanas. Las principales causas son los vertimientos de aguas residuales sin tratar, la minería informal y los desechos sólidos. Esto degrada la calidad del agua, reduce la biodiversidad acuática y pone en riesgo la salud humana. En regiones como Loreto y Madre de Dios, muchas poblaciones dependen de estos ríos para su consumo y sustento diario, lo que agrava el problema.</p>
+        <a href="#rios" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 3. Uso excesivo de plásticos -->
+    <div class="card">
+      <img src="https://elbuho.pe/archivo/elbuho.pe/wp-content/uploads/2019/07/bolsas-de-plastico-peru..jpg" alt="Plásticos">
+      <div class="card-content">
+        <h2>🛍️ Uso excesivo de plásticos</h2>
+        <p>En el Perú, el uso excesivo de plásticos de un solo uso es una de las principales fuentes de contaminación, sobre todo en ciudades como Lima y Callao. Bolsas, botellas y envases terminan en ríos, playas y vertederos, donde pueden tardar siglos en degradarse. Este problema se agrava por el bajo índice de reciclaje, que apenas alcanza el 1.9 % a nivel nacional. La acumulación de plásticos afecta la fauna marina y terrestre, y también impacta la salud humana a través de los microplásticos.</p>
+        <a href="#plasticos" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 4. Minería informal -->
+    <div class="card">
+      <img src="https://www.comexperu.org.pe/upload/images/act-2_evolucion-de-la-minera-informal-181024-123533.jpg" alt="Minería informal">
+      <div class="card-content">
+        <h2>⛏️ Minería informal</h2>
+        <p>En el Perú, la minería informal es una de las principales causas de degradación ambiental, especialmente en regiones como Madre de Dios, Puno y La Libertad. Esta actividad, realizada sin controles técnicos ni permisos legales, contamina ríos y suelos con mercurio y otros químicos. Además, provoca deforestación, pérdida de biodiversidad y graves impactos en la salud de las comunidades cercanas. La ausencia de fiscalización efectiva y las necesidades económicas de la población contribuyen a su expansión.</p>
+        <a href="#mineria" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 5. Contaminación del aire -->
+    <div class="card">
+      <img src="https://petramas.com/wp-content/uploads/2024/04/22.jpeg" alt="Contaminación del aire">
+      <div class="card-content">
+        <h2>🌫️ Contaminación del aire</h2>
+        <p>En el Perú, la contaminación del aire es un problema crítico en ciudades como Lima, Arequipa y La Oroya. Sus principales causas son el transporte urbano con vehículos antiguos, la quema de combustibles fósiles y las emisiones industriales. Los altos niveles de partículas finas (PM2.5) afectan la salud respiratoria y cardiovascular de la población. En zonas industriales como La Oroya, la contaminación ha llegado a niveles tan altos que ha sido catalogada entre las ciudades más contaminadas del mundo.</p>
+        <a href="#aire" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 6. Pesca indiscriminada -->
+    <div class="card">
+      <img src="https://i0.wp.com/www.actualidadambiental.pe/wp-content/uploads/2024/05/bolichera-agencia-andina.jpg?fit=900%2C592&ssl=1" alt="Pesca indiscriminada">
+      <div class="card-content">
+        <h2>🐟 Pesca indiscriminada</h2>
+        <p>En el Perú, la pesca indiscriminada amenaza gravemente la biodiversidad marina y el equilibrio de los ecosistemas costeros. La captura excesiva de especies como la anchoveta, muchas veces en épocas de reproducción, reduce las poblaciones y altera la cadena alimenticia. En algunas zonas, se usan métodos destructivos como redes de arrastre, que dañan el fondo marino. Este problema impacta la economía pesquera a largo plazo y pone en riesgo la seguridad alimentaria de comunidades costeras.</p>
+        <a href="#pesca" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 7. Basura en playas -->
+    <div class="card">
+      <img src="https://comercial.cronosmedia.glr.pe/original/2023/07/05/64a5dbdaf16152418113cbb2.jpg" alt="Basura en playas">
+      <div class="card-content">
+        <h2>🏖️ Basura en playas</h2>
+        <p>En el Perú, la acumulación de basura en playas es un problema recurrente en zonas turísticas como Máncora, Paracas y las playas de Lima. Los desechos, principalmente plásticos, vidrios y restos de comida, provienen tanto de visitantes como de residuos arrastrados por ríos y desagües. Esta contaminación degrada los ecosistemas costeros, afecta a la fauna marina y reduce el atractivo turístico. Además, genera riesgos para la salud de bañistas y pescadores locales.</p>
+        <a href="#playas" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 8. Derrames de petróleo -->
+    <div class="card">
+      <img src="https://c.files.bbci.co.uk/F140/production/_122906716_hi073206794.jpg" alt="Derrame de petróleo">
+      <div class="card-content">
+        <h2>🛢️ Derrames de petróleo</h2>
+        <p>En el Perú, los derrames de petróleo son frecuentes en zonas amazónicas como Loreto y en la costa norte. Estas fugas, causadas por fallas en oleoductos, accidentes o negligencia, contaminan ríos, suelos y selvas, afectando gravemente a la flora y fauna. Las comunidades indígenas y ribereñas sufren impactos directos en su salud, alimentación y acceso a agua limpia. Además, la recuperación de las áreas afectadas puede tardar décadas, dejando daños ambientales casi irreversibles.</p>
+        <a href="#petroleo" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 9. Quema de basura -->
+    <div class="card">
+      <img src="https://e.rpp-noticias.io/normal/2022/11/02/410841_1338366.jpg" alt="Quema de basura">
+      <div class="card-content">
+        <h2>🔥 Quema de basura</h2>
+        <p>En el Perú, la quema de basura es una práctica común en zonas rurales y periurbanas donde no hay un sistema adecuado de recolección de residuos. Esta acción libera gases tóxicos como dióxido de carbono, monóxido de carbono y dioxinas, que contaminan el aire y afectan la salud respiratoria. Además, contribuye al cambio climático y puede provocar incendios no controlados. La falta de educación ambiental y de infraestructura para el manejo de desechos mantiene vigente este problema.</p>
+        <a href="#quema" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 10. Desperdicio de agua -->
+    <div class="card">
+      <img src="https://pqs.pe/wp-content/uploads/2022/10/Desperdicio-de-agua.jpg" alt="Desperdicio de agua">
+      <div class="card-content">
+        <h2>🚿 Desperdicio de agua</h2>
+        <p>En el Perú, el desperdicio de agua es un problema frecuente tanto en áreas urbanas como rurales. En ciudades, el uso excesivo en actividades domésticas y fugas en las redes de distribución agravan la escasez. En el campo, sistemas de riego ineficientes provocan grandes pérdidas del recurso hídrico. Este mal uso es especialmente preocupante en regiones costeras y andinas donde el agua es limitada y la crisis climática reduce su disponibilidad.</p>
+        <a href="#agua" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 11. Sobrepoblación urbana -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Diversidad_etnica.jpg" alt="Sobrepoblación urbana">
+      <div class="card-content">
+        <h2>🏙️ Sobrepoblación urbana</h2>
+        <p>En el Perú, la sobrepoblación urbana se concentra principalmente en Lima y otras grandes ciudades, donde el rápido crecimiento poblacional supera la capacidad de los servicios públicos. Esto genera problemas como la falta de áreas verdes, congestión vehicular, contaminación y deficiente manejo de residuos. La expansión desordenada afecta la calidad de vida y la salud de los habitantes, además de incrementar la vulnerabilidad ante desastres naturales. Planificar un desarrollo urbano sostenible es vital para enfrentar estos retos.</p>
+        <a href="#poblacion" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+    <!-- 12. Pérdida de glaciares -->
+    <div class="card">
+      <img src="https://e.rpp-noticias.io/xlarge/2017/07/18/510351_446871.jpg" alt="Pérdida de glaciares">
+      <div class="card-content">
+        <h2>❄️ Pérdida de glaciares</h2>
+        <p>En el Perú, la pérdida de glaciares en la Cordillera de los Andes es una consecuencia directa del cambio climático. Estos glaciares son fuentes clave de agua para millones de personas en las zonas altoandinas y la costa. Su retroceso afecta la disponibilidad de agua para agricultura, consumo humano y generación de energía. Además, altera los ecosistemas y aumenta el riesgo de desastres como aluviones y sequías.</p>
+        <a href="#glaciares" class="btn">Ver Solución</a>
+      </div>
+    </div>
+
+  </section>
+<section id="soluciones">
+  <h1>✅ Soluciones para Cuidar el Planeta</h1>
+  <p>Aquí puedes ver qué acciones tomar para resolver cada problema ambiental en Perú y sus respectivos beneficios.</p>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQHlqiPoCRTSAOKd6IQVYNIVU9b5Lvo6REw&s" alt="Tala de Árboles">
+      <div class="card-content">
+  <section id="tala" class="solution">
+    <h2>🌳 Solución: Papel Reciclado</h2>
+    <p><h3>Pasos para hacer papel reciclado en casa:</h3>
+      <ol>
+        <li>Reúne papel usado (sin tinta brillante).</li>
+        <li>Córtalo en pedacitos y remójalo en agua por 1 hora.</li>
+        <li>Licúalo hasta obtener una pasta.</li>
+        <li>Coloca la mezcla sobre una malla fina y extiéndela.</li>
+        <li>Déjalo secar al sol y ¡Listo, papel reciclado!</li>
+      </ol>
+      <p><strong>Beneficios:</strong> Se reduce la tala de árboles y se reutilizan residuos.</p>
+      <p><strong>Video Tutorial:</strong> https://www.youtube.com/watch?v=yydUkfMeqM4</p>
+    </section>
+ </div>
+    </div>
+
+  <section id="rios" class="solution">
+    <h2>💧 Solución: Contaminación de ríos</h2>
+    <p><h3>Pasos para hacer un ecofiltro casero:</h3>  
+<ol>
+        <li>Corta una botella plástica por la mitad.</li>
+        <li>Llena la parte superior con capas de carbón activado, arena fina y piedras pequeñas.</li>
+        <li>Vierte el agua lentamente para que se filtre y salga más limpia.</li>
+      </ol>
+      <p><strong>Beneficios:</strong> Mejora la calidad del agua para consumo doméstico y reduce la contaminación de ríos y lagos.</p>
+
+  </section>
+
+  <section id="plasticos" class="solution">
+    <h2>🛍️ Solución: Uso excesivo de plásticos</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Usar bolsas reutilizables, evitar productos con mucho empaque plástico y separar correctamente los residuos para reciclar.</p>
+  </section>
+
+  <section id="mineria" class="solution">
+    <h2>⛏️ Solución: Minería informal</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Apoyar la formalización minera, promover tecnologías limpias que no usen mercurio, y difundir información sobre los impactos negativos.</p>
+  </section>
+
+  <section id="aire" class="solution">
+    <h2>🌫️ Solución: Contaminación del aire</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Usar transporte público o bicicleta, plantar árboles en barrios y exigir vehículos con estándares ambientales modernos.</p>
+  </section>
+
+  <section id="pesca" class="solution">
+    <h2>🐟 Solución: Pesca indiscriminada</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Comprar pescado certificado, respetar temporadas de veda y promover la pesca artesanal sostenible.</p>
+  </section>
+
+  <section id="playas" class="solution">
+    <h2>🏖️ Solución: Basura en playas</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Participar en jornadas de limpieza, evitar tirar basura y usar menos productos plásticos cuando visites la playa.</p>
+  </section>
+
+  <section id="petroleo" class="solution">
+    <h2>🛢️ Solución: Derrames de petróleo</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Informar a las autoridades si ves un derrame, apoyar leyes que regulen la industria petrolera y promover energías limpias.</p>
+  </section>
+
+  <section id="quema" class="solution">
+    <h2>🔥 Solución: Quema de basura</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Separar los residuos, llevarlos a puntos de reciclaje o compostaje, y evitar quemarlos para proteger el aire que respiramos.</p>
+  </section>
+
+  <section id="agua" class="solution">
+    <h2>🚿 Solución: Desperdicio de agua</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Cerrar la llave mientras te cepillas, reparar fugas y reutilizar el agua de la lluvia o del lavado para regar plantas.</p>
+  </section>
+
+  <section id="poblacion" class="solution">
+    <h2>🏙️ Solución: Sobrepoblación urbana</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Promover el desarrollo de ciudades sostenibles con más áreas verdes, transporte eficiente y manejo adecuado de residuos.</p>
+  </section>
+
+  <section id="glaciares" class="solution">
+    <h2>❄️ Solución: Pérdida de glaciares</h2>
+    <p><strong>Acciones recomendadas:</strong>  
+      Fomentar la reducción de emisiones contaminantes, apoyar proyectos que monitoreen glaciares y cuidar el agua de montaña.</p>
+  </section>
+
+  <a href="#problemas" class="btn" style="margin-top: 30px;">⬅ Volver a Problemas</a>
+</section>
+</script>
+
+<section id="quiz" style="text-align:center; padding:40px;">
+  <h1>🎯 ¡Pon a prueba tu EcoConciencia!</h1>
+  <p>Responde estas preguntas y conviértete en un Guardián del Planeta 🌍</p>
+
+  <div id="quiz-container" style="
+    max-width: 600px; 
+    margin: 20px auto; 
+    background:#ffffff; 
+    border-radius:20px; 
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1); 
+    padding:20px; 
+    font-family:'Comic Sans MS', cursive;">
+    
+    <h2 id="question-text" style="color:#007f5f; font-size:1.5em;"></h2>
+    
+    <div id="options" style="display:flex; flex-direction:column; gap:15px; margin-top:20px;"></div>
+    
+    <button id="next-btn" style="
+      margin-top:20px; 
+      background-color:#06d6a0; 
+      color:#fff; 
+      padding:12px; 
+      border:none; 
+      border-radius:8px; 
+      font-size:16px; 
+      cursor:pointer; 
+      display:none;">
+      Siguiente ➡
+    </button>
+    
+    <p id="score-text" style="margin-top:15px; font-weight:bold;"></p>
+  </div>
+</section>
+
+<script>
+const questions = [
+  {
+    question: "¿Cuál es la principal causa de la tala de árboles en Perú?",
+    options: ["Expansión agrícola y ganadera", "Huracanes", "Turismo"],
+    answer: 0
+  },
+  {
+    question: "¿Qué se debe usar para reducir el uso de bolsas plásticas?",
+    options: ["Bolsas de papel", "Bolsas reutilizables", "Más bolsas pequeñas"],
+    answer: 1
+  },
+  {
+    question: "¿Qué recurso contamina la minería ilegal?",
+    options: ["El aire", "Los ríos y suelos", "Los glaciares"],
+    answer: 1
+  },
+  // 🔥 Aquí se añadirán las demás preguntas hasta completar 200
+];
+
+// Generar preguntas aleatorias para que sea dinámico
+while (questions.length < 200) {
+  questions.push({
+    question: "Pregunta Eco #" + (questions.length + 1),
+    options: ["Opción A", "Opción B", "Opción C"],
+    answer: Math.floor(Math.random() * 3)
+  });
+}
+
+let currentQuestion = 0;
+let score = 0;
+
+const questionText = document.getElementById("question-text");
+const optionsContainer = document.getElementById("options");
+const nextBtn = document.getElementById("next-btn");
+const scoreText = document.getElementById("score-text");
+
+function loadQuestion() {
+  const q = questions[currentQuestion];
+  questionText.textContent = q.question;
+  optionsContainer.innerHTML = "";
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.style.cssText = `
+      background:#ffb703;
+      color:#fff;
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    `;
+    btn.onmouseover = () => btn.style.background = "#fb8500";
+    btn.onmouseout = () => btn.style.background = "#ffb703";
+    
+    btn.addEventListener("click", () => selectAnswer(i));
+    optionsContainer.appendChild(btn);
+  });
+  nextBtn.style.display = "none";
+  scoreText.textContent = `Pregunta ${currentQuestion + 1} de ${questions.length}`;
+}
+
+function selectAnswer(i) {
+  const q = questions[currentQuestion];
+  const buttons = optionsContainer.querySelectorAll("button");
+  buttons.forEach((btn, index) => {
+    btn.disabled = true;
+    if (index === q.answer) {
+      btn.style.background = "#06d6a0"; // Correcto
+    }
+    if (index === i && index !== q.answer) {
+      btn.style.background = "#ef476f"; // Incorrecto
+    }
+  });
+  if (i === q.answer) score++;
+  nextBtn.style.display = "inline-block";
+}
+
+nextBtn.addEventListener("click", () => {
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+    loadQuestion();
+  } else {
+    quizEnd();
+  }
+});
+
+function quizEnd() {
+  questionText.textContent = "¡Completaste el quiz! 🎉";
+  optionsContainer.innerHTML = "";
+  nextBtn.style.display = "none";
+  scoreText.textContent = `Puntuación final: ${score} / ${questions.length}`;
+}
+
+loadQuestion();
+</script>
+
+</body>
+</html>
+
